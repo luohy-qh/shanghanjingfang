@@ -1,0 +1,105 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a8331e"/>
+      <stop offset="100%" stop-color="#6b1f12"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#d4a85a" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#f0d28a"/>
+      <stop offset="100%" stop-color="#d4a85a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8fc55a"/>
+      <stop offset="55%" stop-color="#5a8f2c"/>
+      <stop offset="100%" stop-color="#2f5818"/>
+    </linearGradient>
+    <radialGradient id="leafHi" cx="0.35" cy="0.25" r="0.6">
+      <stop offset="0%" stop-color="#c5e894" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#c5e894" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 圆角方形底（白色） -->
+  <rect width="512" height="512" rx="96" ry="96" fill="#ffffff"/>
+
+  <!-- 内框 -->
+  <rect x="40" y="40" width="432" height="432" rx="64" ry="64"
+        fill="none" stroke="#d4a85a" stroke-width="3" opacity="0.55"/>
+
+  <!-- 顶部金线 -->
+  <rect x="120" y="92" width="272" height="5" fill="url(#gold)" rx="2"/>
+
+  <!-- ===== 艾叶（中药草本）===== -->
+  <g transform="translate(256, 256) rotate(-18)">
+
+    <!-- 叶柄 -->
+    <path d="M 0 138 Q 4 110 2 80" stroke="#4a2f15" stroke-width="8"
+          fill="none" stroke-linecap="round"/>
+
+    <!-- 叶片主体（披针形） -->
+    <path d="M 2 80
+             Q 60 60 78 10
+             Q 86 -50 70 -100
+             Q 40 -140 2 -148
+             Q -36 -140 -66 -100
+             Q -82 -50 -74 10
+             Q -56 60 2 80 Z"
+          fill="url(#leaf)" stroke="#1f3d10" stroke-width="3"
+          stroke-linejoin="round"/>
+
+    <!-- 叶面高光 -->
+    <path d="M 2 80
+             Q 60 60 78 10
+             Q 86 -50 70 -100
+             Q 40 -140 2 -148
+             Q -36 -140 -66 -100
+             Q -82 -50 -74 10
+             Q -56 60 2 80 Z"
+          fill="url(#leafHi)" stroke="none"/>
+
+    <!-- 中央主脉 -->
+    <path d="M 2 70 L 2 -142" stroke="#1f3d10" stroke-width="3.5"
+          fill="none" stroke-linecap="round" opacity="0.85"/>
+
+    <!-- 侧脉（右侧，向上） -->
+    <path d="M 2 50 Q 25 45 50 32" stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+    <path d="M 2 20 Q 30 12 58 -2"  stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+    <path d="M 2 -15 Q 30 -25 60 -45" stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+    <path d="M 2 -50 Q 25 -62 52 -85" stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+    <path d="M 2 -85 Q 18 -98 38 -118" stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+
+    <!-- 侧脉（左侧，向上，镜像） -->
+    <path d="M 2 50 Q -21 45 -46 32" stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+    <path d="M 2 20 Q -26 12 -54 -2" stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+    <path d="M 2 -15 Q -26 -25 -56 -45" stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+    <path d="M 2 -50 Q -21 -62 -48 -85" stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+    <path d="M 2 -85 Q -14 -98 -34 -118" stroke="#1f3d10" stroke-width="1.8" fill="none" opacity="0.7"/>
+
+    <!-- 叶尖（高光点缀） -->
+    <circle cx="2" cy="-142" r="3" fill="#c5e894"/>
+
+  </g>
+
+  <!-- 装饰小叶（左下 / 右上 衬托） -->
+  <g transform="translate(150, 360) rotate(-50)" opacity="0.8">
+    <path d="M 0 0 Q 22 -6 30 -28 Q 24 -42 0 -44 Q -24 -42 -30 -28 Q -22 -6 0 0 Z"
+          fill="url(#leaf)" stroke="#1f3d10" stroke-width="2"/>
+    <path d="M 0 -2 L 0 -40" stroke="#1f3d10" stroke-width="1.5" fill="none" opacity="0.7"/>
+  </g>
+  <g transform="translate(362, 160) rotate(35)" opacity="0.7">
+    <path d="M 0 0 Q 18 -5 24 -22 Q 19 -34 0 -36 Q -19 -34 -24 -22 Q -18 -5 0 0 Z"
+          fill="url(#leaf)" stroke="#1f3d10" stroke-width="2"/>
+    <path d="M 0 -2 L 0 -32" stroke="#1f3d10" stroke-width="1.5" fill="none" opacity="0.7"/>
+  </g>
+
+  <!-- 底部金线 -->
+  <rect x="120" y="416" width="272" height="5" fill="url(#gold)" rx="2"/>
+
+  <!-- 底部"傷寒論"（繁体，深红） -->
+  <text x="256" y="468"
+        font-family="STKaiti, KaiTi, 'KaiTi_GB2312', 'BiauKai', 'DFKai-SB', 'BiauKai', serif"
+        font-size="46" font-weight="bold"
+        fill="#8b2c1d" text-anchor="middle"
+        letter-spacing="12">傷寒論</text>
+</svg>
